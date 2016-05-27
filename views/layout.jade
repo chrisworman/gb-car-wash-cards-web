@@ -1,0 +1,43 @@
+﻿doctype html
+html
+    head
+        title= 'Car Wash Cards | ' + title
+        link(rel='stylesheet', href='//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css')
+        link(rel='stylesheet', href='/css/bootstrap.min.css')
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.5.0/fullcalendar.min.css')
+        link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.5.0/fullcalendar.print.css', media='print')
+        script(src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js')
+        script(src='/javascripts/bootstrap.min.js')
+        script(src='//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js')
+        script(src='//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.5.0/fullcalendar.min.js')
+        script(src='//code.jquery.com/ui/1.11.4/jquery-ui.js')
+        block head
+  body
+
+    // Navbar
+    nav.navbar.navbar-default
+        .container-fluid
+
+            .navbar-header
+                button.navbar-toggle.collapsed(data-toggle='collapse', data-target='#carWashNavBar')
+                    span.glyphicon.glyphicon-th-list
+                a.navbar-brand(href='/')
+                    img(src='/images/carwash-icon.png')
+
+            #carWashNavBar.collapse.navbar-collapse
+                ul.nav.navbar-nav
+                    li(class=currentPage == 'reservations' ? 'active' : '')
+                        a(href='/') 
+                            span.glyphicon.glyphicon-calendar
+                            | &nbsp; Reservations
+                    li(class=currentPage == 'users' ? 'active ' : '')
+                        a(href='/users') 
+                            span.glyphicon.glyphicon-user
+                            | &nbsp; Users
+                
+
+    // Page content
+    block content
+
+    

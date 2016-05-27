@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "CarWashCards", "CarWashCards.njsproj", "{459A0595-F2B2-474B-9B34-730DC0051BE8}"
+EndProject
+Global
+	GlobalSection(VaultVsipSolution-v2) = preSolution
+		VaultHost = http://vault/VaultService
+		VaultRepositoryID = 5
+		VaultRepositoryGUID = 55a7350e-76c9-4385-b801-e779dfa7f131
+		ProjectCount = 1
+		ProjectRelativeDiskPath1 = CarWashCards.njsproj
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{459A0595-F2B2-474B-9B34-730DC0051BE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{459A0595-F2B2-474B-9B34-730DC0051BE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{459A0595-F2B2-474B-9B34-730DC0051BE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{459A0595-F2B2-474B-9B34-730DC0051BE8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

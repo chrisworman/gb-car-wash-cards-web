@@ -1,0 +1,38 @@
+﻿extends layout
+
+block head
+    script(src='/javascripts/views/reservations.js')
+
+block content
+
+    button#addReservationButton.btn.btn-primary
+        span.glyphicon.glyphicon-plus
+        | &nbsp; New Reservation
+
+    #calendar
+
+    #reservationPopup.modal.fade
+        .modal-dialog
+            .modal-content
+                .modal-header
+                    button.close(type='button', data-dismiss='modal')
+                        span.glyphicon.glyphicon-remove
+                    h4.modal-title Car Wash Card Reservation
+                .modal-body
+                    .form-group
+                        label User
+                        select#userSelect.form-control
+                            option(value='0') -- Select User --
+                            each user in users
+                                option(value='#{user.id}') #{user.first_name} #{user.last_name}
+                    .form-group
+                        label Pick-Up Date
+                        input#startDateInput.form-control(type='text')
+                    .form-group
+                        label Drop-Off Date
+                        input#endDateInput.form-control(type='text')
+                .modal-footer
+                    button#saveButton.btn.btn-primary(type='button')
+                        span.glyphicon.glyphicon-save
+                        | &nbsp; Save
+                    button.btn.btn-default(type='button', data-dismiss='modal') Cancel
